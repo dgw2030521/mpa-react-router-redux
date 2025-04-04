@@ -12,13 +12,15 @@ const router = createBrowserRouter(routeConfig);
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <Provider store={store}>
-    {/*<Router>*/}
-    {/*  <PersistGate loading={null} persistor={persistor}>*/}
-    {/*    <Routes>*/}
-    {/*      <Route path="/" element={<Home />} />*/}
-    {/*    </Routes>*/}
-    {/*  </PersistGate>*/}
-    {/*</Router>*/}
+
+      {/*<PersistGate loading={null} persistor={persistor}>*/}
+      {/*  <Router>*/}
+      {/*  <Routes>*/}
+      {/*    <Route path="/" element={<Home />} />*/}
+      {/*  </Routes>*/}
+      {/*  </Router>*/}
+      {/*</PersistGate>*/}
+
 
       <PersistGate loading={null} persistor={persistor}>
         <RouterProvider router={router} />
